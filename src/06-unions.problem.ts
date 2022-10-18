@@ -8,7 +8,7 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+  role: "admin" | "user" | "super-admin";  // called a union type
 }
 
 export const defaultUser: User = {
